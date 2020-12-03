@@ -26,3 +26,13 @@
     background-color: var(--main-color);
 }
 
+.logo-img{
+    max-width: 50vw;
+}
+
+.navbar-toggler{
+    border-style: none;
+    border-radius: 100%;
+    color: var(--text-grey);
+}
+

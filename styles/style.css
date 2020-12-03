@@ -1,3 +1,5 @@
+
+
 :root {
     --blue:#97D4ED;
 
@@ -14,25 +16,66 @@
     --primary: #FFFFFF;
 }
 
+*{
+    box-sizing: border-box;
+    color: var(--text-grey);
+}
+
 .text-grey{
     color: var(--text-grey);
 }
 
-.image-rounded{
-    border-color: var(--main-color);
+.cdm-shadow{
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 
-.wave{
-    background-color: var(--main-color);
-}
+
+/* css navbar */
 
 .logo-img{
     max-width: 50vw;
 }
 
-.navbar-toggler{
-    border-style: none;
-    border-radius: 100%;
+.navbar-toggler, .navbar-toggler:active {
+    border: none !important;
+    outline: none !important;
+
+    color: var(--text-grey) !important;
+}
+
+#ham-closed-icon{
+    font-size: 15px;
+
     color: var(--text-grey);
 }
 
+.hidden{
+    display: none;
+}
+
+.cdm-ul{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cdm-ul .nav-item{
+    width: 100%;
+    text-align: center;
+
+    background-color: var(--blue);
+
+    border-color: var(--white);
+    border-style: solid;
+}
+
+
+
+@media screen and (min-width: 760px) {
+    .navbar-toggler{
+        display: none;
+    }
+}

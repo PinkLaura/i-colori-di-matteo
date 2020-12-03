@@ -10,9 +10,19 @@
     --white: #FFFFFF;
 
     --text-grey: #39454C;
+
+    --primary: #FFFFFF;
 }
 
 .text-grey{
     color: var(--text-grey);
+}
+
+.image-rounded{
+    border-color: var(--main-color);
+}
+
+.wave{
+    background-color: var(--main-color);
 }
 

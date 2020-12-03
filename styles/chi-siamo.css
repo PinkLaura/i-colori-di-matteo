@@ -1,6 +1,8 @@
+/* Import general CSS*/
 @import "style.css";
 
+/*Define page main color*/
 :root{
-    --primary: #E7CF70;
+    --main-color: var(--yellow);
 }
 

@@ -1,24 +1,21 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
 :root {
     --blue:#97D4ED;
-
     --red: #E58F91;
-    
     --yellow: #E7CF70;
-
     --green: #B0D066;
-
     --white: #FFFFFF;
-
     --text-grey: #39454C;
-
-    --primary: #FFFFFF;
+    --light-grey: #F2F0F0;
 }
 
 *{
     box-sizing: border-box;
     color: var(--text-grey);
+
+    font-family: "Quicksand", sans serif;
+    font-weight: 500;
 }
 
 .text-grey{
@@ -67,12 +64,17 @@
     text-align: center;
 
     background-color: var(--blue);
-
-    border-color: var(--white);
-    border-style: solid;
+    margin: 0px 1px;
 }
 
+.cdm-ul .nav-item .nav-link{    
+    color: var(--white);
+}
 
+.cdm-navbar-grey{
+    background-color: var(--light-grey);
+    padding: 0;
+}
 
 @media screen and (min-width: 760px) {
     .navbar-toggler{

@@ -1,0 +1,17 @@
+:root {
+    --blue:#97D4ED;
+
+    --red: #E58F91;
+    
+    --yellow: #F1DD8D;
+
+    --green: #B0D066;
+
+    --white: #FFFFFF;
+
+    --grey-dark: ;
+}
+
+.text-grey-dark{
+    color: var(--grey-dark);
+}

@@ -3,15 +3,16 @@
 
     --red: #E58F91;
     
-    --yellow: #F1DD8D;
+    --yellow: #E7CF70;
 
     --green: #B0D066;
 
     --white: #FFFFFF;
 
-    --grey-dark: ;
+    --text-grey: #39454C;
 }
 
-.text-grey-dark{
-    color: var(--grey-dark);
+.text-grey{
+    color: var(--text-grey);
 }
+

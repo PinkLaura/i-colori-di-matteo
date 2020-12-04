@@ -1,5 +1,7 @@
+/* import font Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
+/* palette colors */
 :root {
     --blue:#97D4ED;
     --red: #E58F91;
@@ -18,19 +20,22 @@
     font-weight: 500;
 }
 
+/* text color */
 .text-grey{
     color: var(--text-grey);
 }
 
+/* HEADER*/
+
+/* shadow of the header */
 .cdm-shadow{
-    -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25);
 }
 
 
-/* css navbar */
-
+/* navbar */
 .logo-img{
     max-width: 50vw;
 }
@@ -48,6 +53,7 @@
     color: var(--text-grey);
 }
 
+/* class to hide elements */
 .hidden{
     display: none;
 }
@@ -64,7 +70,7 @@
     text-align: center;
 
     background-color: var(--blue);
-    margin: 0px 1px;
+    margin: 0 1px;
 }
 
 .cdm-ul .nav-item .nav-link{    

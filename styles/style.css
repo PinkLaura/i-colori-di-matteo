@@ -75,14 +75,19 @@
 
 .cdm-ul .nav-item .nav-link {
     color: var(--white);
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
+/* style of the active menu item */
 .active-item{
-    background-color: var(--white);
-    color: var(--blue);
-    border: 2px solid var(--blue);
+    background-color: var(--white) !important;
+    border: 2px solid var(--blue) !important;
 }
+
+.active-item .nav-link {
+    color: var(--blue) !important;
+}
+
 
 .cdm-navbar-grey {
     background-color: var(--light-grey);

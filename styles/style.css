@@ -1,7 +1,7 @@
 /* import font Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
-/* palette colors */
+/* colors' palette */
 :root {
     --blue: #97D4ED;
     --red: #E58F91;
@@ -10,7 +10,11 @@
     --white: #FFFFFF;
     --text-grey: #39454C;
     --light-grey: #F2F0F0;
+
+    --main-color: --yellow;
 }
+
+/*RESET*/
 
 * {
     box-sizing: border-box;
@@ -20,8 +24,12 @@
     font-weight: 500;
 }
 
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+
 /* text color */
-.text-grey {
+.text-grey{
     color: var(--text-grey);
 }
 
@@ -33,7 +41,6 @@
     -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-
 
 /* navbar */
 .logo-img {
@@ -94,8 +101,28 @@
     padding: 0;
 }
 
+/*WAVES*/
+
+/* class of the svg wave*/
+.wave {
+    display: block;
+    fill: var(--main-color);
+
+    z-index: -1;
+}
+
+/* class of the div inside the two waves*/
+.wave-section{
+    height: 300px;  /*to remove!!*/
+
+    background-color: var(--main-color);
+    z-index: -1;
+}
+
+
 @media screen and (min-width: 760px) {
     .navbar-toggler {
         display: none;
     }
 }
+

@@ -1,128 +1,119 @@
 /* import font Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
-/* colors' palette */
+/* Color palette */
 :root {
-    --blue: #97D4ED;
-    --red: #E58F91;
-    --yellow: #E7CF70;
-    --green: #B0D066;
-    --white: #FFFFFF;
-    --text-grey: #39454C;
-    --light-grey: #F2F0F0;
-
-    --main-color: --yellow;
+  --blue: #97D4ED;
+  --red: #E58F91;
+  --yellow: #E7CF70;
+  --green: #B0D066;
+  --white: #FFFFFF;
+  --text-grey: #39454C;
+  --light-grey: #F2F0F0;
+  --main-color: --yellow;
 }
 
-/*RESET*/
-
+/*Rest Browser default style and general setting*/
 * {
-    box-sizing: border-box;
-    color: var(--text-grey);
-
-    font-family: "Quicksand", sans serif;
-    font-weight: 500;
+  box-sizing: border-box;
+  color: var(--text-grey);
+  font-family: "Quicksand", sans serif;
+  font-weight: 500;
 }
 
-*,*::before,*::after {
-    box-sizing: inherit;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
-/* text color */
-.text-grey{
-    color: var(--text-grey);
+/* General text color */
+.text-grey {
+  color: var(--text-grey);
 }
 
-/* HEADER*/
-
-/* shadow of the header */
+/* HEADER setting*/
+/* Setting of the header's shadow*/
 .cdm-shadow {
-    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* navbar */
+/* Logo width setting */
 .logo-img {
-    max-width: 50vw;
+  max-width: 50vw;
 }
 
+/* Setting of the active hamburger menu items */
 .navbar-toggler, .navbar-toggler:active {
-    border: none !important;
-    outline: none !important;
-
-    color: var(--text-grey) !important;
+  border: none !important;
+  outline: none !important;
+  color: var(--text-grey) !important;
 }
 
+/* Setting of the hamburger menu x icon */
 #ham-closed-icon {
-    font-size: 15px;
-
-    color: var(--text-grey);
+  font-size: 15px;
+  color: var(--text-grey);
 }
 
-/* class to hide elements */
+/* Class to hide the hamburger menu x icon */
 .hidden {
-    display: none;
+  display: none;
 }
 
+/*Setting of the menu items*/
 .cdm-ul {
-    width: 100%;
-
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cdm-ul .nav-item {
-    width: 100%;
-    text-align: center;
-
-    background-color: var(--blue);
-    margin: 0 1px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--blue);
+  margin: 0 1px;
 }
 
 .cdm-ul .nav-item .nav-link {
-    color: var(--white);
-    font-size: 1rem;
+  color: var(--white);
+  font-size: 1rem;
 }
 
-/* style of the active menu item */
-.active-item{
-    background-color: var(--white) !important;
-    border: 2px solid var(--blue) !important;
+/* Setting of the active menu items */
+.active-item {
+  background-color: var(--white) !important;
+  border: 2px solid var(--blue) !important;
 }
 
 .active-item .nav-link {
-    color: var(--blue) !important;
+  color: var(--blue) !important;
 }
 
-
 .cdm-navbar-grey {
-    background-color: var(--light-grey);
-    padding: 0;
+  background-color: var(--light-grey);
+  padding: 0;
 }
 
 /*WAVES*/
-
-/* class of the svg wave*/
+/* Class to set the svg wave*/
 .wave {
-    display: block;
-    fill: var(--main-color);
-
-    z-index: -1;
+  display: block;
+  fill: var(--main-color);
+  z-index: -1;
 }
 
-/* class of the div inside the two waves*/
-.wave-section{
-    height: 300px;  /*to remove!!*/
-
-    background-color: var(--main-color);
-    z-index: -1;
+/* Class of the div inside the two waves*/
+.wave-section {
+  height: 300px;
+  /*to remove!!*/
+  background-color: var(--main-color);
+  z-index: -1;
 }
 
-
+/* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
 @media screen and (min-width: 760px) {
-    .navbar-toggler {
-        display: none;
-    }
+  .navbar-toggler {
+    display: none;
+  }
 }
-

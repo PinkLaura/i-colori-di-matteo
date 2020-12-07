@@ -17,13 +17,17 @@
 /*Rest Browser default style and general setting*/
 *, *:active {
   box-sizing: border-box !important;
-  color: var(--text-grey);
   font-family: "Quicksand", sans serif;
   font-weight: 500;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+img{
+  width: 100%;
+  height: 100%;
 }
 
 /*TEXT*/
@@ -199,7 +203,24 @@
 /*FOOTER*/
 footer {
   background-color: var(--text-grey);
+  color: var(--white);
+
+  font-size: 0.75rem;
+  text-align: center;
 }
+
+.cmd-foo-title {
+  color: var(--white); 
+
+  font-size: 1rem;
+}
+
+footer img{
+  max-height: 8rem;
+
+  padding: 1.5rem;
+}
+
 
 
 /* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/

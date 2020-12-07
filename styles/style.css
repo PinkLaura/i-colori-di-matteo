@@ -11,7 +11,7 @@
   --text-grey: #39454C;
   --light-grey: #F2F0F0;
 
-  --main-color: --yellow;
+  --main-color: var(--yellow);
 }
 
 /*Rest Browser default style and general setting*/
@@ -98,6 +98,10 @@ img{
 }
 
 /* HEADER setting*/
+header{
+  background-color: var(--white);
+}
+
 /* Setting of the header's shadow*/
 .cdm-shadow {
   -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
@@ -211,17 +215,30 @@ footer {
 
 .cmd-foo-title {
   color: var(--white); 
-
   font-size: 1rem;
 }
 
 footer img{
-  max-height: 8rem;
+  max-height: 5rem;
+  display: none;
+}
 
+footer .row{
   padding: 1.5rem;
 }
 
+footer p{
+  display: none;
+}
 
+footer i{
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+footer i:hover{
+  color: var(--blue);
+}
 
 /* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
 @media screen and (min-width: 760px) {
@@ -261,6 +278,10 @@ footer img{
 
   #cdm-logo-mobile {
     display: none;
+  }
+
+  footer img, footer p{
+    display: block;
   }
 
 }

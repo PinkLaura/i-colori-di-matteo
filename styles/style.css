@@ -97,6 +97,10 @@
   justify-content: center;
 }
 
+#cdm-logo-desktop {
+  display: none;
+}
+
 /* Setting of the active menu items */
 #cdm-ul .nav-item .active, #cdm-ul .nav-link:hover {
   background-color: var(--white) ;
@@ -143,6 +147,17 @@
 
   #cdm-ul{
     margin-bottom: 0;
+  }
+
+  #cdm-logo-desktop {
+    display: block;
+    padding: 0.5rem;
+
+    height: 6rem;
+  }
+
+  #cdm-logo-mobile {
+    display: none;
   }
 
 }

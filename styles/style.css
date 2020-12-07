@@ -105,8 +105,8 @@
 
 /* Class of the div inside the two waves*/
 .wave-section {
-  height: 300px;
-  /*to remove!!*/
+  height: 300px;  /*to remove!!*/
+  
   background-color: var(--main-color);
   z-index: -1;
 }

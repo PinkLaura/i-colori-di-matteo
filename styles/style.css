@@ -14,8 +14,8 @@
 }
 
 /*Rest Browser default style and general setting*/
-* {
-  box-sizing: border-box;
+*, *:active {
+  box-sizing: border-box !important;
   color: var(--text-grey);
   font-family: "Quicksand", sans serif;
   font-weight: 500;
@@ -43,7 +43,7 @@
   max-width: 50vw;
 }
 
-/* Setting of the active hamburger menu items */
+/* Setting of the navbar toggler*/
 .navbar-toggler, .navbar-toggler:active {
   border: none !important;
   outline: none !important;
@@ -52,7 +52,7 @@
 
 /* Setting of the hamburger menu x icon */
 #ham-closed-icon {
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--text-grey);
 }
 
@@ -62,31 +62,35 @@
 }
 
 /*Setting of the menu items*/
-.cdm-ul {
+#cdm-ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.cdm-ul .nav-item {
+#cdm-ul .nav-item {
   width: 100%;
   text-align: center;
   background-color: var(--blue);
   margin: 0 1px;
 }
 
-.cdm-ul .nav-item .nav-link {
+#cdm-ul .nav-item .nav-link {
   color: var(--white);
-  font-size: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 /* Setting of the active menu items */
-.active-item {
-  background-color: var(--white) !important;
-  border: 2px solid var(--blue) !important;
+#cdm-ul .active, #cdm-ul .nav-item:hover {
+  background-color: var(--white) ;
+  border: 2px solid var(--blue) ;
+
+  color: var(--blue);
 }
 
-.active-item .nav-link {
+
+#cdm-ul .active .nav-link, #cdm-ul .nav-link:hover {
   color: var(--blue) !important;
 }
 
@@ -106,7 +110,7 @@
 /* Class of the div inside the two waves*/
 .wave-section {
   height: 300px;  /*to remove!!*/
-  
+
   background-color: var(--main-color);
   z-index: -1;
 }

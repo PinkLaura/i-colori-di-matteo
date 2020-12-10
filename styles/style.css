@@ -15,6 +15,41 @@
 }
 
 
+/*Colors classes*/
+
+.cdm-text-red {
+    color: var(--red);
+}
+
+.cdm-text-green {
+    color: var(--green);
+}
+
+.cdm-text-blue {
+    color: var(--blue);
+}
+
+.cdm-text-yellow {
+    color: var(--yellow);
+}
+
+.cdm-yellow {
+    background-color: var(--yellow);
+}
+
+.cdm-red {
+    background-color: var(--red);
+}
+
+.cdm-green {
+    background-color: var(--green);
+}
+
+.cdm-blue {
+    background-color: var(--blue);
+}
+
+
 /*Rest Browser default style and general setting*/
 
 *,
@@ -54,8 +89,7 @@ img {
     font-weight: 600;
     color: var(--text-grey);
     font-size: 1.6rem;
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .cdm-title-3 {
@@ -76,8 +110,8 @@ img {
 /*SECTIONS*/
 
 .cdm-section {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }
 
 
@@ -232,8 +266,6 @@ header {
 /* Class of the div inside the two waves*/
 
 .wave-section {
-    height: 300px;
-    /*to remove!!*/
     background-color: var(--main-color);
     z-index: -1;
 }

@@ -101,6 +101,13 @@ img {
 }
 
 
+/*IMAGES*/
+
+.cdm-img {
+    border-radius: 15px;
+}
+
+
 /* HEADER setting*/
 
 header {

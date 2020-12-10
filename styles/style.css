@@ -1,288 +1,275 @@
 /* import font Quicksand & Quicksand*/
+
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
 /* Color palette */
-:root {
-  --blue: #97D4ED;
-  --red: #E58F91;
-  --yellow: #E7CF70;
-  --green: #B0D066;
-  --white: #FFFFFF;
-  --text-grey: #39454C;
-  --light-grey: #F2F0F0;
 
-  --main-color: var(--yellow);
+:root {
+    --blue: #97D4ED;
+    --red: #E58F91;
+    --yellow: #E7CF70;
+    --green: #B0D066;
+    --white: #FFFFFF;
+    --text-grey: #39454C;
+    --light-grey: #F2F0F0;
+    --main-color: var(--yellow);
 }
+
 
 /*Rest Browser default style and general setting*/
-*, *:active {
-  box-sizing: border-box !important;
-  font-family: "Quicksand", sans serif;
-  font-weight: 500;
+
+*,
+*:active {
+    box-sizing: border-box !important;
+    font-family: "Quicksand", sans serif;
+    font-weight: 500;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
-img{
-  width: 100%;
-  height: 100%;
+img {
+    width: 100%;
+    height: 100%;
 }
+
 
 /*TEXT*/
+
 .cdm-title-1 {
-  font-family: "Grandstander", cursive;
-  font-weight: 700;
-
-  color: var(--main-color);
-  text-align: center;
-  text-transform: uppercase;
-
-  font-size: 2rem;
+    font-family: "Grandstander", cursive;
+    font-weight: 700;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-top: 5.5rem;
 }
 
-.cdm-title-2{
-  font-family: "Grandstander", cursive;
-  font-weight: 600;
-
-  color: var(--text-grey);
-
-  font-size: 1.75rem;
+.cdm-title-2 {
+    font-family: "Grandstander", cursive;
+    font-weight: 600;
+    color: var(--text-grey);
+    font-size: 1.75rem;
 }
 
-.cdm-title-3{
-  font-family: "Quicksand", sans serif;
-  font-weight: 700;
-
-  color: var(--text-grey);
-
-  font-size: 1.25rem;
+.cdm-title-3 {
+    font-family: "Quicksand", sans serif;
+    font-weight: 700;
+    color: var(--text-grey);
+    font-size: 1.25rem;
 }
 
-.cdm-paragraph{
-  font-family: "Quicksand", sans serif;
-  font-weight: 500;
-
-  color: var(--text-grey);
-
-  font-size: 1rem;
+.cdm-paragraph {
+    font-family: "Quicksand", sans serif;
+    font-weight: 500;
+    color: var(--text-grey);
+    font-size: 1rem;
 }
+
 
 /*BUTTON*/
-.cdm-btn{
-  display: block;
-  background-color: var(--main-color);
-  border-radius: 2rem;
-  padding: 0.5rem 1rem;
 
-  font-weight: 700;
-
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+.cdm-btn {
+    display: block;
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.cdm-btn-normal, .cdm-btn-reverse:hover{
-  background-color: var(--main-color);
-  color: var(--white);
-
-  text-decoration: none;
+.cdm-btn-normal,
+.cdm-btn-reverse:hover {
+    background-color: var(--main-color);
+    color: var(--white);
+    text-decoration: none;
 }
 
-.cdm-btn-reverse, .cdm-btn-normal:hover{
-  background-color: var(--white);
-  color: var(--main-color);
-
-  text-decoration: none;
+.cdm-btn-reverse,
+.cdm-btn-normal:hover {
+    background-color: var(--white);
+    color: var(--main-color);
+    text-decoration: none;
 }
+
 
 /* HEADER setting*/
-header{
-  background-color: var(--white);
+
+header {
+    background-color: var(--white);
 }
+
 
 /* Setting of the header's shadow*/
+
 .cdm-shadow {
-  -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
+
 
 /* Logo width setting */
+
 .logo-img {
-  max-width: 50vw;
+    max-width: 50vw;
 }
+
 
 /* Setting of the navbar toggler*/
-.navbar-toggler, .navbar-toggler:active {
-  border: none !important;
-  outline: none !important;
-  color: var(--text-grey) !important;
+
+.navbar-toggler,
+.navbar-toggler:active {
+    border: none !important;
+    outline: none !important;
+    color: var(--text-grey) !important;
 }
+
 
 /* Setting of the hamburger menu x icon */
+
 #ham-closed-icon {
-  font-size: 1rem;
-  color: var(--text-grey);
+    font-size: 1rem;
+    color: var(--text-grey);
 }
 
-/* Class to hide the hamburger menu x icon */
-.hidden {
-  display: none;
-}
 
 /*Setting of the menu items*/
-#cdm-ul {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
 
-  margin-bottom: 0.4rem;
+#cdm-ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
 }
 
 #cdm-ul .nav-item {
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #cdm-ul .nav-item .nav-link {
-  width: 100%;
-  height: 100%;
-
-  color: var(--white);
-  font-size: 1.2rem;
-  font-weight: 700;
-  
-  text-align: center;
-  background-color: var(--blue);
-  border: 2px solid var(--blue) ;
-
-  margin: 0.2rem 0;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: var(--white);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--blue);
+    border: 2px solid var(--blue);
+    margin: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#cdm-logo-desktop, #cdm-donation-btn {
-  display: none;
+
+/*Setting of the donation button*/
+
+#cdm-donation-btn {
+    background-color: var(--red);
+}
+
+#cdm-donation-btn:hover {
+    color: var(--red);
+    background-color: var(--white);
 }
 
 
 /* Setting of the active menu items */
-#cdm-ul .nav-item .active, #cdm-ul .nav-link:hover {
-  background-color: var(--white) ;
-  border: 2px solid var(--blue) ;
 
-  color: var(--blue);
+#cdm-ul .nav-item .active,
+#cdm-ul .nav-link:hover {
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    color: var(--blue);
 }
-
 
 .cdm-navbar-grey {
-  background-color: var(--white);
-  padding: 0;
+    background-color: var(--white);
+    padding: 0;
 }
+
 
 /*WAVES*/
+
+
 /* Class to set the svg wave*/
+
 .wave {
-  display: block;
-  fill: var(--main-color);
-  z-index: -1;
+    display: block;
+    fill: var(--main-color);
+    z-index: -1;
 }
 
-/* Class of the div inside the two waves*/
-.wave-section {
-  height: 300px;  /*to remove!!*/
 
-  background-color: var(--main-color);
-  z-index: -1;
+/* Class of the div inside the two waves*/
+
+.wave-section {
+    height: 300px;
+    /*to remove!!*/
+    background-color: var(--main-color);
+    z-index: -1;
 }
 
 
 /*FOOTER*/
-footer {
-  background-color: var(--text-grey);
-  color: var(--white);
 
-  font-size: 0.75rem;
-  text-align: center;
+footer {
+    background-color: var(--text-grey);
+    color: var(--white);
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 .cmd-foo-title {
-  color: var(--white); 
-  font-size: 1rem;
+    color: var(--white);
+    font-size: 1rem;
 }
 
-footer img{
-  max-height: 5rem;
-  display: none;
+footer img {
+    max-height: 5rem;
 }
 
-footer .row{
-  padding: 1.5rem;
+footer .row {
+    padding: 1.5rem;
 }
 
-footer p{
-  display: none;
-}
 
 /*Footer icons style*/
-footer i{
-  font-size: 1.5rem;
-  color: var(--white);
+
+footer i {
+    font-size: 1.5rem;
+    color: var(--white);
 }
 
-footer i:hover{
-  color: var(--blue);
+footer i:hover {
+    color: var(--blue);
 }
+
 
 /* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
+
 @media screen and (min-width: 760px) {
-  .navbar-toggler {
-    display: none;
-  }
-
-  .cdm-navbar-grey{
-    background-color: var(--light-grey);
-  }
-
-  #cdm-ul .nav-item .nav-link {
-    margin: 0 0.1rem;
-  }
-
-  #cdm-ul{
-    margin-bottom: 0;
-  }
-
-  #cdm-logo-desktop {
-    display: block;
-    padding: 0.5rem;
-
-    height: 6rem;
-  }
-
-  #cdm-donation-btn{
-    display: block;
-
-    background-color: var(--red);
-  }
-
-  #cdm-donation-btn:hover{
-    color: var(--red);
-    background-color: var(--white);
-  }
-
-  #cdm-logo-mobile {
-    display: none;
-  }
-
-  footer img, footer p{
-    display: block;
-  }
-
+    .cdm-navbar-grey {
+        background-color: var(--light-grey);
+    }
+    #cdm-ul .nav-item .nav-link {
+        margin: 0 0.1rem;
+    }
+    #cdm-ul {
+        margin-bottom: 0;
+    }
+    #cdm-logo-desktop {
+        padding: 0.5rem;
+        height: 6rem;
+    }
 }

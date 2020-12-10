@@ -1,0 +1,30 @@
+/* Import general CSS*/
+
+@import url('style.css');
+
+/*Define page main color*/
+
+:root {
+    --main-color: var(--red);
+}
+
+.cdm-title-1 span {
+    font: inherit;
+    text: inherit;
+}
+
+.cdm-text-red {
+    color: var(--red);
+}
+
+.cdm-text-green {
+    color: var(--green);
+}
+
+.cdm-text-blue {
+    color: var(--blue);
+}
+
+.cdm-text-yellow {
+    color: var(--yellow);
+}

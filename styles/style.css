@@ -76,7 +76,8 @@ img {
 /*SECTIONS*/
 
 .cdm-section {
-    margin: 1rem auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 
@@ -245,6 +246,7 @@ footer {
     color: var(--white);
     font-size: 0.75rem;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .cmd-foo-title {

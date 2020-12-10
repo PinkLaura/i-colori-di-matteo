@@ -53,7 +53,9 @@ img {
     font-family: "Grandstander", cursive;
     font-weight: 600;
     color: var(--text-grey);
-    font-size: 1.75rem;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
 }
 
 .cdm-title-3 {

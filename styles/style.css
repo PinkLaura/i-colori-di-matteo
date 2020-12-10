@@ -12,7 +12,6 @@
     --white: #FFFFFF;
     --text-grey: #39454C;
     --light-grey: #F2F0F0;
-    --main-color: var(--yellow);
 }
 
 
@@ -55,7 +54,7 @@ img {
     font-weight: 600;
     color: var(--text-grey);
     font-size: 1.6rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -71,6 +70,13 @@ img {
     font-weight: 500;
     color: var(--text-grey);
     font-size: 1rem;
+}
+
+
+/*SECTIONS*/
+
+.cdm-section {
+    margin: 1rem auto;
 }
 
 

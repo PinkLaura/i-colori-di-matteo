@@ -146,6 +146,7 @@
 .cdm-img{
     object-fit: cover;
     border-radius: 2rem;
+    margin: 0 4em;
 }
 
 
@@ -350,5 +351,9 @@ footer i:hover {
     #cdm-logo-desktop { /* Media Query to change the size of the logo of the menu */
         padding: 0.5rem;
         height: 6rem;
+    }
+
+    .cdm-img{
+        margin: 0;
     }
 }

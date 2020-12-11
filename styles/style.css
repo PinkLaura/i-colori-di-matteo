@@ -67,7 +67,6 @@
 
 img {
     width: 100%;
-    height: 100%;
 }
 
 
@@ -145,9 +144,12 @@ img {
 
 /*IMAGES*/
 
+.img{
+    width: 100%;
+}
+
 .cdm-img {
     border-radius: 2rem;
-    width: 100%;
 }
 
 

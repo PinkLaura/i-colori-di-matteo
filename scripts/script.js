@@ -1,3 +1,4 @@
+/* Function to hide the hamburger menu from the desktop and tablet version of the site*/
 $(document).ready(function() {
 
     $(function() {

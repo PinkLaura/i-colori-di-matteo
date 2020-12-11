@@ -7,9 +7,4 @@ $(document).ready(function() {
             $('#ham-closed-icon').toggleClass('d-none');
         });
     });
-
-    $('.box-container').height(function(){
-        return $(this).width();
-    });
-
 });

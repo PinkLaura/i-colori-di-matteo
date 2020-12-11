@@ -8,4 +8,8 @@ $(document).ready(function() {
         });
     });
 
+    $('.box-container').height(function(){
+        return $(this).width();
+    });
+
 });

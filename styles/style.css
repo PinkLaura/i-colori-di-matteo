@@ -340,11 +340,9 @@ footer i:hover {
 }
 
 
-/* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
-
 @media screen and (min-width: 760px) {
     .cdm-navbar-grey {
-        background-color: var(--light-grey);
+        background-color: var(--light-grey); /* Media Query to change the background color of the menu */
     }
     #cdm-ul .nav-item .nav-link {
         margin: 0 0.1rem;
@@ -352,11 +350,11 @@ footer i:hover {
     #cdm-ul {
         margin-bottom: 0;
     }
-    #cdm-logo-desktop {
+    #cdm-logo-desktop { /* Media Query to change the size of the logo of the menu */
         padding: 0.5rem;
         height: 6rem;
     }
     .cdm-img {
-        max-width: 50%;
+        max-width: 50%;  /* Media Query to change the size of images */
     }
 }

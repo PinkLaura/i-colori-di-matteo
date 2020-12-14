@@ -17,6 +17,10 @@
     max-height: 30vw;
 }
 
+.cdm-green-wave{
+  fill: var(--green);
+}
+
 @media screen and (min-width: 760px) {
     .cdm-baloon {
         max-width: 100%;

@@ -15,41 +15,6 @@
 }
 
 
-/*Colors classes*/
-
-.cdm-text-red {
-    color: var(--red);
-}
-
-.cdm-text-green {
-    color: var(--green);
-}
-
-.cdm-text-blue {
-    color: var(--blue);
-}
-
-.cdm-text-yellow {
-    color: var(--yellow);
-}
-
-.cdm-yellow {
-    background-color: var(--yellow);
-}
-
-.cdm-red {
-    background-color: var(--red);
-}
-
-.cdm-green {
-    background-color: var(--green);
-}
-
-.cdm-blue {
-    background-color: var(--blue);
-}
-
-
 /*Rest Browser default style and general setting*/
 
 *,
@@ -338,6 +303,46 @@ footer i:hover {
 }
 
 
+<<<<<<< Updated upstream
+=======
+/*Colors classes*/
+
+.cdm-text-red {
+    color: var(--red);
+}
+
+.cdm-text-green {
+    color: var(--green);
+}
+
+.cdm-text-blue {
+    color: var(--blue);
+}
+
+.cdm-text-yellow {
+    color: var(--yellow);
+}
+
+.cdm-yellow {
+    background-color: var(--yellow);
+}
+
+.cdm-red {
+    background-color: var(--red);
+}
+
+.cdm-green {
+    background-color: var(--green);
+}
+
+.cdm-blue {
+    background-color: var(--blue);
+}
+
+
+/* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 760px) {
     .cdm-navbar-grey {
         background-color: var(--light-grey); /* Media Query to change the background color of the menu */

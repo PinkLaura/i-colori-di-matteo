@@ -251,9 +251,6 @@ header {
 
 /*WAVES*/
 
-
-/* Class to set the svg wave*/
-
 .wave {
     display: block;
     fill: var(--main-color);
@@ -266,6 +263,8 @@ header {
 .wave-section {
     background-color: var(--main-color);
     z-index: -1;
+    margin-top: -1px;
+    margin-bottom: -1px;
 }
 
 

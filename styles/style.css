@@ -30,6 +30,7 @@
     box-sizing: inherit;
 }
 
+
 /*TEXT*/
 
 .cdm-title-1 {
@@ -104,11 +105,11 @@
 
 /*IMAGES*/
 
-.img{
+.img {
     width: 100%;
 }
 
-.cdm-img{
+.cdm-img {
     object-fit: cover;
     border-radius: 2rem;
     margin: 0 4em;
@@ -303,8 +304,6 @@ footer i:hover {
 }
 
 
-<<<<<<< Updated upstream
-=======
 /*Colors classes*/
 
 .cdm-text-red {
@@ -342,10 +341,10 @@ footer i:hover {
 
 /* Media Query to hide the hamburger menu from the desktop and tablet version of the site*/
 
->>>>>>> Stashed changes
 @media screen and (min-width: 760px) {
     .cdm-navbar-grey {
-        background-color: var(--light-grey); /* Media Query to change the background color of the menu */
+        background-color: var(--light-grey);
+        /* Media Query to change the background color of the menu */
     }
     #cdm-ul .nav-item .nav-link {
         margin: 0 0.1rem;
@@ -353,12 +352,12 @@ footer i:hover {
     #cdm-ul {
         margin-bottom: 0;
     }
-    #cdm-logo-desktop { /* Media Query to change the size of the logo of the menu */
+    #cdm-logo-desktop {
+        /* Media Query to change the size of the logo of the menu */
         padding: 0.5rem;
         height: 6rem;
     }
-
-    .cdm-img{
+    .cdm-img {
         margin: 0;
     }
 }

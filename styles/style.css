@@ -79,7 +79,6 @@
 
 .cdm-btn {
     display: block;
-    background-color: var(--main-color);
     border-radius: 2rem;
     padding: 1rem 2rem;
     font-weight: 700;
@@ -92,14 +91,23 @@
 .cdm-btn-reverse:hover {
     background-color: var(--main-color);
     color: var(--white);
+    border: 2px solid var(--main-color);
     text-decoration: none;
+}
+.cdm-btn-reverse:hover{
+  border: 2px solid var(--white);
 }
 
 .cdm-btn-reverse,
 .cdm-btn-normal:hover {
     background-color: var(--white);
+    border: 2px solid var(--white);
     color: var(--main-color);
     text-decoration: none;
+}
+
+.cdm-btn-normal:hover {
+  border: 2px solid var(--main-color);
 }
 
 

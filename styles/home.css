@@ -17,37 +17,19 @@
     max-height: 30vw;
 }
 
-
-/*Class to made buttons yellow*/
-
-.cdm-yellow-button {
-    background-color: var(--yellow);
-    border-color: var(--yellow);
-}
-
-.cdm-yellow-button:hover {
-    color: var(--yellow);
-    background-color: var(--white);
-    border-color: var(--yellow);
-}
-
-
 /*Wave id to made it green */
-
-#cdm-green-wave {
-    fill: var(--green);
+#cdm-green-wave{
+  fill: var(--green);
 }
-
 
 /*button id to made it green */
-
-#cdm-green-button {
-    color: var(--green);
+#cdm-green-button{
+  color: var(--green);
 }
 
-#cdm-green-button:hover {
-    color: var(--white);
-    background-color: var(--green);
+#cdm-green-button:hover{
+  color: var(--white);
+  background-color: var(--green);
 }
 
 @media screen and (min-width: 760px) {

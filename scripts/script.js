@@ -7,21 +7,4 @@ $(document).ready(function() {
             $('#ham-closed-icon').toggleClass('d-none');
         });
     });
-
-    $('.cdm-car').slick({
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 3,
-        responsive: [{
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                dots: true,
-                slidesToShow: 1
-            }
-        }]
-    });
-
 });

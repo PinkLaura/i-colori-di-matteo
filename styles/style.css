@@ -234,6 +234,7 @@ header {
 
 #cdm-donation-btn {
     background-color: var(--red);
+    border-color: var(--red);
 }
 
 #cdm-donation-btn:hover {

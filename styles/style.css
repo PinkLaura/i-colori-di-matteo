@@ -397,6 +397,7 @@
         /*CAROUSEL*/
         .cdm-slick-carousel .cdm-slick-carousel-item {
             max-width: 210px;
+            opacity: 1;
         }
     }
     

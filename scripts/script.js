@@ -58,7 +58,7 @@ $(document).ready(function() {
         var regexName = /^[A-Za-z]+$/;
         var name = document.getElementById("exampleInputName1");
 
-        var message = $('textarea:input[name=message]').val();
+        var message = $('#exampleFormControlTextarea1').val();
 
         var valid = true;
 
@@ -69,7 +69,7 @@ $(document).ready(function() {
             errorMessage = errorMessage + "\n- Il campo \"Nome e Cognome\" è vuoto o contiene un numero";
         }
 
-        if (email == null || !regexName.test(name.value)) {
+        if (email == null || !regexEmail.test(email.value)) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Email\" non è valido";
         }
@@ -77,13 +77,12 @@ $(document).ready(function() {
         if (message == null) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Messaggio\" è vuoto";
-
         }
 
         if (!valid) {
             alert(errorMessage);
         } else {
-            alert("Il tuo messaggio è stato inviato!")
+            alert("Il tuo messaggio è stato inviato!");
         }
     });
 

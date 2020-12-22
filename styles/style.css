@@ -1,6 +1,9 @@
     /* import font Quicksand & Quicksand*/
     
     @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
+    /*import css slick library*/
+    
+    @import url('slick.css');
     /* Color palette */
     
      :root {
@@ -346,6 +349,10 @@
     
     footer img {
         max-height: 5rem;
+    }
+    
+    footer .d-flex.justify-content-around.container-fluid {
+        padding: 0;
     }
     
     footer .row {

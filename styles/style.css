@@ -288,7 +288,7 @@
         padding: 0;
         border: none;
         border-radius: 100%;
-        background-color: var(--yellow);
+        background-color: var(--main-color);
         text-indent: -9999px;
     }
     

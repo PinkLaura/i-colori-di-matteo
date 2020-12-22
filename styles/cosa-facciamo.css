@@ -1,0 +1,13 @@
+/* Import general CSS*/
+
+@import "style.css";
+
+/*Define page main color*/
+
+:root {
+    --main-color: var(--red);
+}
+
+.slick-dots button {
+    background-color: var(--white);
+}

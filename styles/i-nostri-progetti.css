@@ -1,0 +1,9 @@
+/* Import general CSS*/
+
+@import "style.css";
+
+/*Define page main color*/
+
+:root {
+    --main-color: var(--yellow);
+}

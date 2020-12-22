@@ -50,6 +50,13 @@
     background-color: var(--green);
 }
 
+
+/*Carousel*/
+
+.slick-dots button {
+    background-color: var(--yellow);
+}
+
 @media screen and (min-width: 760px) {
     .cdm-baloon {
         max-width: 100%;

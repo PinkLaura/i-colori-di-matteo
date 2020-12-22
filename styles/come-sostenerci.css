@@ -27,6 +27,8 @@
 
 .cdm-baloon svg path {
     fill: var(--main-color);
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .cdm-baloon svg {
@@ -34,8 +36,8 @@
 }
 
 .cdm-baloon {
-    width: auto;
-    height: 3rem;
+    width: 2rem;
+    height: 5rem;
     border-radius: 0;
 }
 
@@ -47,6 +49,7 @@
     border: 2px solid var(--white);
     background-color: var(--white);
     padding: 0;
+    margin: 1rem;
 }
 
 .cdm-product img {
@@ -58,4 +61,20 @@
 .cdm-product .cdm-title-3 {
     padding: 1rem;
     color: var(--main-color)
+}
+
+
+/*Thanksgiving*/
+
+.cdm-thanks div img {
+    max-width: 100%;
+    padding: 0.25rem;
+}
+
+@media screen and (min-width: 760px) {
+    .cdm-baloon {
+        height: 3rem;
+        padding: 0;
+        margin: auto;
+    }
 }

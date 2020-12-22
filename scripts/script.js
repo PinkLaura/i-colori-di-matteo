@@ -28,12 +28,23 @@ $(document).ready(function() {
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3,
-        responsive: [{
+        responsive: [
+          {
+              breakpoint: 760,
+              settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  dots: true,
+                  slidesToShow: 1
+              }
+          },
+          {
             breakpoint: 991,
             settings: {
                 arrows: false,
                 centerMode: true,
-                centerPadding: '80px',
+                centerPadding: '200px',
                 dots: true,
                 slidesToShow: 1
             }

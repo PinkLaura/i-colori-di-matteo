@@ -1,8 +1,39 @@
 /* Import general CSS*/
+
 @import "style.css";
 
 /*Define page main color*/
-:root{
+
+:root {
     --main-color: var(--yellow);
 }
 
+
+/*Carousel testimonianze*/
+
+#carousel-stories .cdm-slick-carousel-item {
+    background-color: var(--main-color);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+
+/*Product example*/
+
+.cdm-product {
+    border-radius: 2rem;
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    padding: 0;
+}
+
+.cdm-product img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.cdm-product .cdm-title-3 {
+    padding: 1rem;
+    color: var(--main-color)
+}

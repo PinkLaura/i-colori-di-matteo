@@ -326,6 +326,10 @@
     .cdm-form textarea {
         border-radius: 1.5rem;
     }
+    
+    .cdm-form button {
+        padding: 0.75rem 2rem;
+    }
     /*FOOTER*/
     
     footer {

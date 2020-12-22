@@ -72,7 +72,7 @@
     /*BUTTON*/
     
     .cdm-btn {
-        display: inline-block;
+        display: block;
         border-radius: 2rem;
         padding: 1rem 2rem;
         font-weight: 700;

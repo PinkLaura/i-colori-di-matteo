@@ -8,6 +8,38 @@
     --main-color: var(--blue);
 }
 
+
+/*Section Come supportarci*/
+
+.cdm-support-section ul,
+.cdm-support-section li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cdm-support-section .cdm-title-3 {
+    color: var(--main-color);
+}
+
+
+/*Baloons color*/
+
+.cdm-baloon svg path {
+    fill: var(--main-color);
+}
+
+.cdm-baloon svg {
+    padding: 0;
+}
+
+.cdm-baloon {
+    width: auto;
+    height: 3rem;
+    border-radius: 0;
+}
+
+
 /*Product example*/
 
 .cdm-product {

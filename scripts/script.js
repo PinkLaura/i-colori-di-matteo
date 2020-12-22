@@ -24,4 +24,20 @@ $(document).ready(function() {
         }]
     });
 
+    $('.cdm-car-reviews').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        responsive: [{
+            breakpoint: 991,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '80px',
+                dots: true,
+                slidesToShow: 1
+            }
+        }]
+    });
+
 });

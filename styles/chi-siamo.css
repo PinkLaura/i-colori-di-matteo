@@ -37,3 +37,11 @@
     padding: 1rem;
     color: var(--main-color)
 }
+
+@media screen and (min-width: 760px){
+
+  #carousel-stories .cdm-slick-carousel, #carousel-stories .cdm-slick-carousel-item {
+      max-width: 500px;
+      opacity: 1;
+  }
+}

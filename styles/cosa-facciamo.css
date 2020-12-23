@@ -12,6 +12,8 @@
 
 .cdm-baloon svg path {
   fill: var(--red);
+  fill-rule: evenodd;
+  clip-rule: evenodd;
 }
 
 .cdm-baloon {

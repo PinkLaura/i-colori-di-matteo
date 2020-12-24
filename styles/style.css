@@ -357,7 +357,7 @@
     /*FOOTER*/
     
     footer {
-        background-color: var(--light-grey);
+        background-color: var(--text-grey);
         color: var(--white);
         font-size: 0.75rem;
         text-align: center;

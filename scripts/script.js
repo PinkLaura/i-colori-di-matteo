@@ -68,7 +68,7 @@ $(document).ready(function() {
             errorMessage = errorMessage + "\n- Il campo \"Email\" non è valido";
         }
 
-        if (message == null) {
+        if (message.value.length<1) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Messaggio\" è vuoto";
         }
@@ -84,7 +84,7 @@ $(document).ready(function() {
     $('#cdm-button-form-contattaci').on('click', function() {
         let nameContattaci = document.getElementById("inputNameContattaci");
         let emailContattaci = document.getElementById("inputEmailContattaci");
-        let messageContattaci = $('textMessageContattaci').val();
+        let messageContattaci = document.getElementById("textMessageContattaci");
 
         return validationInput(nameContattaci, emailContattaci,messageContattaci);
     });
@@ -93,7 +93,7 @@ $(document).ready(function() {
     $('#cdm-button-form-chi-siamo').on('click', function() {
         let nameChiSiamo = document.getElementById("inputNameChiSiamo");
         let emailChiSiamo = document.getElementById("inputEmailChiSiamo");
-        let messageChiSiamo = $('textMessageChiSiamo').val();
+        let messageChiSiamo = document.getElementById("textMessageChiSiamo");
 
         return validationInput(nameChiSiamo, emailChiSiamo,messageChiSiamo);
     });

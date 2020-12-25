@@ -51,17 +51,11 @@ $(document).ready(function() {
         ]
     });
 
-    $('#cdm-button-stories').on('click', function() {
-        var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
-        var email = document.getElementById("exampleInputEmail1");
-
-        var regexName = /^[A-Za-z]+$/;
-        var name = document.getElementById("exampleInputName1");
-
-        var message = $('#exampleFormControlTextarea1').val();
-
+    //form input controls
+    function validationInput (name, email, message){
+        const regexName = /^[A-Za-z]+$/; //string control with letters only
+        const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //check that it's an e-mail
         var valid = true;
-
         var errorMessage = "Il tuo messaggio non è stato inviato.\n\nEcco perchè:";
 
         if (name == null || !regexName.test(name.value)) {
@@ -84,6 +78,24 @@ $(document).ready(function() {
         } else {
             alert("Il tuo messaggio è stato inviato!");
         }
+    }
+
+    // Alert of the page Contattaci
+    $('#cdm-button-form-contattaci').on('click', function() {
+        let nameContattaci = document.getElementById("inputNameContattaci");
+        let emailContattaci = document.getElementById("inputEmailContattaci");
+        let messageContattaci = $('textMessageContattaci').val();
+
+        return validationInput(nameContattaci, emailContattaci,messageContattaci);
+    });
+
+    // Alert of the page Chi siamo
+    $('#cdm-button-form-chi-siamo').on('click', function() {
+        let nameChiSiamo = document.getElementById("inputNameChiSiamo");
+        let emailChiSiamo = document.getElementById("inputEmailChiSiamo");
+        let messageChiSiamo = $('textMessageChiSiamo').val();
+
+        return validationInput(nameChiSiamo, emailChiSiamo,messageChiSiamo);
     });
 
     // add padding top to show content behind navbar

@@ -64,11 +64,20 @@
 }
 
 
-/*Thanksgiving*/
+/*Greetings*/
 
-.cdm-thanks div img {
-    max-width: 100%;
-    padding: 0.25rem;
+.cdm-greetings div{
+   padding: 0.25rem;
+}
+
+.cdm-greetings div img {
+    padding: 0.6rem;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.cdm-greetings div img:hover{
+    opacity: 0.6;
 }
 
 @media screen and (min-width: 760px) {

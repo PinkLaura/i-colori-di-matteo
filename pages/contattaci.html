@@ -34,49 +34,62 @@
 
 
 <body>
+
 <!-- Header with 2 section:
 - the first one with logo + call to action to "donate now"
-- the second one with the menu -->
+- the second one with the menu items -->
 <header class="cdm-shadow smart-scroll sticky-top">
-    <!-- logo and button navbar part -->
+
+    <!-- the first section with logo + call to action to "donate now" -->
     <div class="navbar navbar-light">
         <div class="d-flex justify-content-between container-lg">
-            <!--Insertion of the logo -->
+
+            <!-- insertion of the logo -->
             <a class="navbar-brand" href="../index.html">
+
+                <!-- logo for mobile -->
                 <img id="cdm-logo-mobile" class="d-block d-md-none logo-img" src="../images/logo/logo.svg"
                      alt="logo dell'associazione I colori di Matteo, composto dalla scritta e da alcuni palloncini colorati"/>
+
+                <!-- logo for tablet and desktop -->
                 <img id="cdm-logo-desktop" class="d-none d-md-block logo-img" src="../images/logo/logo-long.svg"
                      alt="logo dell'associazione I colori di Matteo, composto dalla scritta e da alcuni palloncini colorati"/>
             </a>
 
+            <!-- donation button visible only on tablet and desktop version of the site-->
             <a id="cdm-donation-btn" class="d-none d-md-block cdm-btn cdm-btn-normal" href="come-sostenerci.html">
                 Dona ora
             </a>
 
-            <!--Hamburger menu that appears only on the mobile version of the site -->
+            <!-- hamburger menu that appears only on the mobile version of the site -->
             <button class="navbar-toggler d-md-none" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
+
+                <!-- hamburger icon that appears when the menu is closed -->
                 <span id="ham-icon" class="navbar-toggler-icon"></span>
+
+                <!-- X icon that appears when the menu is open -->
                 <span id="ham-closed-icon" class="d-none"> <i class="fas fa-times fa-2x"></i> </span>
+
             </button>
         </div>
     </div>
 
-    <!--Menu items -->
+    <!-- the second section with the menu items -->
     <nav class="cdm-navbar-grey navbar navbar-expand-md navbar-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="container-lg">
 
                 <ul id="cdm-ul" class="navbar-nav mr-auto">
                     <li class="nav-item ">
-                        <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="autismo.html">L'autismo</a>
+                        <a class="nav-link" href="autismo.html">L'autismo </a>
                     </li>
                     <li class=" nav-item">
-                        <a class="nav-link" href="chi-siamo.html">Chi siamo</a>
+                        <a class="nav-link" href="chi-siamo.html">Chi siamo </a>
                     </li>
 
                     <li class="nav-item">
@@ -84,13 +97,14 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="active nav-link" href="contattaci.html">Contattaci</a>
+                        <a class="active nav-link" href="contattaci.html">Contattaci <span class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="come-sostenerci.html">Come sostenerci</a>
+                        <a class="nav-link" href="come-sostenerci.html">Come sostenerci </a>
                     </li>
                 </ul>
+
             </div>
         </div>
     </nav>

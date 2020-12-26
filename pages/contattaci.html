@@ -35,7 +35,7 @@
 
 <body>
 
-<!-- Header with 2 section:
+<!-- HEADER with 2 section:
 - the first one with logo + call to action to "donate now"
 - the second one with the menu items -->
 <header class="cdm-shadow smart-scroll sticky-top">
@@ -97,7 +97,8 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="active nav-link" href="contattaci.html">Contattaci <span class="sr-only">(current)</span></a>
+                        <a class="active nav-link" href="contattaci.html">Contattaci <span
+                                class="sr-only">(current)</span></a>
                     </li>
 
                     <li class="nav-item">
@@ -113,31 +114,35 @@
 
 <main>
 
+    <!-- main title of the page -->
     <h1 class="cdm-title-1">
         Contattaci
     </h1>
 
     <div class="container-md cdm-section">
-        <!-- Section Mappa  -->
+
+        <!-- section DOVE SIAMO  -->
         <section>
+
             <h2 class="cdm-title-2">
                 Dove siamo
             </h2>
 
             <!-- map -->
             <div class="cdm-map col-md-10 offset-md-1">
-            <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.5250983154215!2d12.681432914815582!3d41.903069371831386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f7c4236146abf%3A0xaaedf377748cb063!2sVia%20del%20Fosso%20Scilicino%2C%2015%2C%2000132%20Roma%20RM!5e0!3m2!1sit!2sit!4v1608808387364!5m2!1sit!2sit"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.5250983154215!2d12.681432914815582!3d41.903069371831386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f7c4236146abf%3A0xaaedf377748cb063!2sVia%20del%20Fosso%20Scilicino%2C%2015%2C%2000132%20Roma%20RM!5e0!3m2!1sit!2sit!4v1608808387364!5m2!1sit!2sit"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
 
             <p class="cdm-paragraph text-center">
-                Indirizzo: Via del Fosso Scilicino, 15, 00132 Roma RM
+                Via del Fosso Scilicino, 15, 00132 Roma RM
             </p>
         </section>
 
-        <!-- Section contatti-->
+        <!-- section CONTATTI-->
         <section class="cdm-contact-icons mt-5">
+
             <h2 class="cdm-title-2 ">
                 Contatti
             </h2>
@@ -189,9 +194,8 @@
 
             </div>
         </section>
-    </div>
 
-    <!-- section FORM -->
+    </div>
 
     <!-- Initial part of the wave -->
     <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 60">
@@ -201,16 +205,18 @@
     </svg>
 
     <!-- The colorful section inside the wave -->
+
+    <!-- section FORM  -->
     <div class="wave-section">
         <section class="container-md cdm-section">
-            <!-- All the sections content with hers container-md -->
-
 
             <div class="cdm-form row">
 
+                <!-- title -->
                 <h2 class="text-center cdm-title-2 col">
                     Inviaci un messaggio!
                 </h2>
+
                 <!-- Form fields -->
                 <form class=" offset-md-1 col-md-10">
 
@@ -241,7 +247,8 @@
 
                     </div>
 
-
+                    <!-- button to send the data -->
+                    <!-- when clicked, it calls the function to check that inputs of the correct format -->
                     <button id="cdm-button-form-contattaci" type="submit"
                             class="cdm-btn-reverse cdm-btn float-lg-right mx-auto">
                         Invia
@@ -249,21 +256,25 @@
                 </form>
             </div>
 
-
         </section>
     </div>
 
 </main>
 
-<!-- Footer -->
+<!-- FOOTER -->
 <footer>
     <div class="container-md">
         <div class="row">
 
+            <!-- contattaci with social icons -->
             <div class="d-flex flex-column align-items-center col-md-4 col-6">
+
+                <!-- title -->
                 <h4 class="mb-3 mb-md-4 cmd-foo-title cdm-title-3">
                     Contattaci
                 </h4>
+
+                <!-- social icons -->
                 <div class="d-flex justify-content-around container-fluid">
                     <a href="mailto:icoloridimatteo@gmail.com" target="_blank">
                         <i class="fas fa-envelope"></i></a>
@@ -276,14 +287,22 @@
                 </div>
             </div>
 
+            <!-- logo visible only on tablets and desktops -->
             <a href="../index.html" class="col-md-4 col-6 d-none d-md-block">
                 <img src="../images/logo/logo-white.svg"
                      alt="logo dell'associazione I colori di Matteo, composto dalla scritta e da alcuni palloncini colorati"/>
             </a>
 
+            <!-- privacy with its icon -->
             <div class="d-flex flex-column align-items-center col-md-4 col-6 ">
+
+                <!-- title -->
                 <h4 class="mb-3 mb-md-1 cmd-foo-title cdm-title-3">Privacy</h4>
+
+                <!-- paragraph visible only on tablets and desktops -->
                 <p class="d-none d-md-block"> Scarica la scheda relativa alla privacy </p>
+
+                <!-- icon that, if clicked, downloads the privacy document -->
                 <div>
                     <a href="#">
                         <i class="fas fa-download"></i></a>

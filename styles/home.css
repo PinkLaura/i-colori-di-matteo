@@ -1,25 +1,27 @@
-/* Import general CSS*/
-
+/* ------- import general CSS  ------- */
 @import url('style.css');
 
-/*Define page main color*/
 
+/*  ------- define page main color  ------- */
 :root {
     --main-color: var(--red);
 }
 
+
+/*  ------- main title ------- */
 .cdm-title-1 span {
     font: inherit;
 }
 
+
+/*  ------- baloons  ------- */
 .cdm-baloon {
     max-width: 30vw;
     max-height: 30vw;
 }
 
 
-/*Class to made buttons yellow*/
-
+/*  ------- class to made buttons yellow  ------- */
 .cdm-yellow-button {
     background-color: var(--yellow);
     border-color: var(--yellow);
@@ -32,15 +34,13 @@
 }
 
 
-/*Wave id to made it green */
-
+/*  ------- to make wave green  ------- */
 #cdm-green-wave {
     fill: var(--green);
 }
 
 
-/*button id to made it green */
-
+/*  ------- to make buttons green  ------- */
 #cdm-green-button {
     color: var(--green);
 }
@@ -51,12 +51,13 @@
 }
 
 
-/*Carousel*/
-
+/*  ------- carousels  ------- */
 .slick-dots button {
     background-color: var(--yellow);
 }
 
+
+/* ------- media query to change style for devices larger than 760px ------- */
 @media screen and (min-width: 760px) {
     .cdm-baloon {
         max-width: 100%;

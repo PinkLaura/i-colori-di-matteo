@@ -1,21 +1,23 @@
-/* Import general CSS*/
-
+/* ------- import general CSS  ------- */
 @import "style.css";
 
-/*Define page main color*/
 
+/*  ------- define page main color  ------- */
 :root {
     --main-color: var(--green);
 }
 
+
+/*  ------- map style  ------- */
 .cdm-map iframe{
     height: 15rem;
     border-radius: 3rem;
     width: 100%;
-    background-color: var(--main-color);
+    background-color: var(--main-color); /*when the map hasn't loaded yet, there is a green background */
 }
 
 
+/*  ------- contact's icons  ------- */
 .cdm-contact-icons div div {
     padding: 1.5rem;
 }

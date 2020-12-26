@@ -1,16 +1,14 @@
-/* Import general CSS*/
-
+/* ------- import general CSS  ------- */
 @import "style.css";
 
-/*Define page main color*/
 
+/*  ------- define page main color  ------- */
 :root {
     --main-color: var(--blue);
 }
 
 
-/*Section Come supportarci*/
-
+/*  ------- section Modi per supportarci ------- */
 .cdm-support-section ul,
 .cdm-support-section li {
     list-style-type: none;
@@ -23,8 +21,7 @@
 }
 
 
-/*Baloons color*/
-
+/*  ------- baloons ------- */
 .cdm-baloon svg path {
     fill: var(--main-color);
     max-width: 100%;
@@ -42,8 +39,7 @@
 }
 
 
-/*Product example*/
-
+/*  ------- products ------- */
 .cdm-product {
     border-radius: 2rem;
     border: 2px solid var(--white);
@@ -64,8 +60,7 @@
 }
 
 
-/*Greetings*/
-
+/*  ------- greetings ------- */
 .cdm-greetings div{
    padding: 0.25rem;
 }
@@ -80,6 +75,8 @@
     opacity: 0.6;
 }
 
+
+/* ------- media query to change style for devices larger than 760px ------- */
 @media screen and (min-width: 760px) {
     .cdm-baloon {
         height: 3rem;

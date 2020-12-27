@@ -454,7 +454,7 @@ footer i:hover {
 
 
 /* ------- media query to change style for devices larger than 760px ------- */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .cdm-title-1 {
         font-size: 3rem;
         margin-top: 6.5rem;
@@ -492,7 +492,7 @@ footer i:hover {
 }
 
 /* ------- media query to change style for devices larger than 990px ------- */
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
     .cdm-slick-carousel .cdm-slick-carousel-item {
         max-width: 255px;
     }

@@ -58,7 +58,7 @@
 
 
 /* ------- media query to change style for devices larger than 760px ------- */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
     .cdm-baloon {
         max-width: 100%;
         max-height: 100%;

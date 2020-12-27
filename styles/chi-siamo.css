@@ -42,7 +42,7 @@
 
 
 /* ------- media query to change style for devices larger than 990px ------- */
-@media screen and (min-width: 990px) {
+@media screen and (min-width: 992px) {
   #carousel-stories .slick-slide:not(.slick-active) {
     opacity: 1;
   }

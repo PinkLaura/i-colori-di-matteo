@@ -68,11 +68,11 @@
 .cdm-greetings div img {
     padding: 0.6rem;
     width: 100%;
-    opacity: 0.2;
+    opacity: 0.8;
 }
 
 .cdm-greetings div img:hover{
-    opacity: 0.6;
+    opacity: 1;
 }
 
 

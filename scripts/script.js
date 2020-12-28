@@ -1,19 +1,23 @@
 /* Function to hide the hamburger menu from the desktop and tablet version of the site*/
 $(document).ready(function() {
 
+    //function that controls the menu icons on mobile
     $(function() {
         $('.navbar-toggler').click(function() {
+            // on mobile when you click the hamburger menu, the hamburger icon disappears and the X icon appears
             $('#ham-icon').toggleClass('d-none');
+            // on mobile when you click the X icon, the X icon disappears and the hamburger icon appears
             $('#ham-closed-icon').toggleClass('d-none');
         });
     });
 
+    //function that controls the I nostri progetti's carousel
     $('.cdm-car').slick({
         centerMode: true,
         centerPadding: '0px',
         slidesToShow: 3,
         responsive: [{
-            breakpoint: 760,
+            breakpoint: 768,
             settings: {
                 arrows: false,
                 centerMode: true,
@@ -24,6 +28,7 @@ $(document).ready(function() {
         }]
     });
 
+    //function that controls the Le testimonianze's carousel
     $('.cdm-car-reviews').slick({
         centerMode: true,
         centerPadding: '0px',
@@ -39,7 +44,7 @@ $(document).ready(function() {
                 }
             },
             {
-                breakpoint: 991,
+                breakpoint: 992,
                 settings: {
                     arrows: false,
                     centerMode: true,
@@ -51,39 +56,54 @@ $(document).ready(function() {
         ]
     });
 
-    $('#cdm-button-stories').on('click', function() {
-        var regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/;
-        var email = document.getElementById("exampleInputEmail1");
-
-        var regexName = /^[A-Za-z]+$/;
-        var name = document.getElementById("exampleInputName1");
-
-        var message = $('#exampleFormControlTextarea1').val();
-
+    //form input controls
+    function validationInput (name, email, message){
+        const regexName = /^[A-Za-z]+$/; //check there are no numbers
+        const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //check that it's an e-mail
         var valid = true;
-
         var errorMessage = "Il tuo messaggio non è stato inviato.\n\nEcco perchè:";
 
+        //the name is not valid if it is empty or contains numbers
         if (name == null || !regexName.test(name.value)) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Nome e Cognome\" è vuoto o contiene un numero";
         }
 
+        //email is not valid if it is empty or it doesn't have the right format
         if (email == null || !regexEmail.test(email.value)) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Email\" non è valido";
         }
 
-        if (message == null) {
+        //message is not valid if it is empty
+        if (message.value.length<1) {
             valid = false;
             errorMessage = errorMessage + "\n- Il campo \"Messaggio\" è vuoto";
         }
 
         if (!valid) {
-            alert(errorMessage);
+            alert(errorMessage); //the message appears only if at least one input is incorrect
         } else {
             alert("Il tuo messaggio è stato inviato!");
         }
+    }
+
+    // Alert of the page Contattaci
+    $('#cdm-button-form-contattaci').on('click', function() {
+        let nameContattaci = document.getElementById("inputNameContattaci");
+        let emailContattaci = document.getElementById("inputEmailContattaci");
+        let messageContattaci = document.getElementById("textMessageContattaci");
+
+        return validationInput(nameContattaci, emailContattaci,messageContattaci);
+    });
+
+    // Alert of the page Chi siamo
+    $('#cdm-button-form-chi-siamo').on('click', function() {
+        let nameChiSiamo = document.getElementById("inputNameChiSiamo");
+        let emailChiSiamo = document.getElementById("inputEmailChiSiamo");
+        let messageChiSiamo = document.getElementById("textMessageChiSiamo");
+
+        return validationInput(nameChiSiamo, emailChiSiamo,messageChiSiamo);
     });
 
     // add padding top to show content behind navbar

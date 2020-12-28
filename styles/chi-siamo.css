@@ -1,12 +1,14 @@
-/* Import general CSS*/
+/* ------- import general CSS  ------- */
 @import "style.css";
 
-/*Define page main color*/
+
+/*  ------- define page main color  ------- */
 :root {
   --main-color: var(--yellow);
 }
 
-/*Carousel voulunteers*/
+
+/* ------- I volontari's carousel ------- */
 .slick-dots button {
   background-color: var(--white);
 }
@@ -15,7 +17,7 @@
   background-color: var(--main-color);
 }
 
-/*Carousel testimonianze*/
+/* ------- Le testimonianze's carousel ------- */
 #carousel-stories .cdm-slick-carousel-item {
   background-color: var(--main-color);
   border-radius: 2rem;
@@ -26,6 +28,8 @@
   height: inherit;
 }
 
+
+/* ------- media query to change style for devices larger than 760px ------- */
 @media screen and (min-width: 760px) {
   #carousel-stories .cdm-slick-carousel, #carousel-stories .cdm-slick-carousel-item {
     max-width: 325px;
@@ -36,7 +40,9 @@
   }
 }
 
-@media screen and (min-width: 990px) {
+
+/* ------- media query to change style for devices larger than 990px ------- */
+@media screen and (min-width: 992px) {
   #carousel-stories .slick-slide:not(.slick-active) {
     opacity: 1;
   }

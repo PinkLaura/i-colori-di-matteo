@@ -1,11 +1,14 @@
-/* Import general CSS*/
+/* ------- import general CSS  ------- */
 @import "style.css";
 
-/*Define page main color*/
+
+/*  ------- define page main color  ------- */
 :root{
     --main-color: var(--green);
 }
 
+
+/*  ------- the symbol '-' apprears before each list item  ------- */
 ul {
   list-style-type: '-  ';
   margin: 0;

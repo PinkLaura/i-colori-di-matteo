@@ -1,15 +1,20 @@
-/* Import general CSS*/
+/* ------- import general CSS  ------- */
 @import "style.css";
 
-/*Define page main color*/
+
+/*  ------- define page main color  ------- */
 :root {
   --main-color: var(--red);
 }
 
+
+/*  ------- carousel  ------- */
 .slick-dots button {
   background-color: var(--white);
 }
 
+
+/*  ------- baloons  ------- */
 .cdm-baloon svg path {
   fill: var(--main-color);
   fill-rule: evenodd;

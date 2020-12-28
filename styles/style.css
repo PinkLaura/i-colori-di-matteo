@@ -250,26 +250,6 @@ header {
 }
 
 
-/* ------- scroll setting -------*/
-.smart-scroll {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.scrolled-down {
-    transform: translateY(-122px);
-    transition: all 0.3s ease-in-out;
-}
-
-.scrolled-up {
-    transform: translateY(0);
-    transition: all 0.3s ease-in-out;
-}
-
-
 /* ------- waves setting -------*/
 
 .wave {
@@ -459,6 +439,25 @@ footer i:hover {
         font-size: 3rem;
         margin-top: 6.5rem;
         padding: 1rem 0;
+    }
+
+    /* ------- scroll setting -------*/
+    .smart-scroll {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .scrolled-down {
+        transform: translateY(-122px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .scrolled-up {
+        transform: translateY(0);
+        transition: all 0.3s ease-in-out;
     }
 
     /* media query to change the background color of the menu */

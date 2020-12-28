@@ -12,6 +12,7 @@
 .cdm-map iframe{
     height: 15rem;
     border-radius: 3rem;
+    border: 0;
     width: 100%;
     background-color: var(--main-color); /*when the map hasn't loaded yet, there is a green background */
 }

@@ -114,7 +114,6 @@ $(document).ready(function() {
 
     if (windowSizeWide > 768) {
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
-      console.log('ciao');
     }
 
   });
@@ -125,11 +124,10 @@ $(document).ready(function() {
 
     if (windowSizeWide > 768) {
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
-      console.log('ciao');
+
     }
     else{
       $('body').css('padding-top', 0 + 'px')
-
     }
 
   });

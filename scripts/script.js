@@ -58,7 +58,7 @@ $(document).ready(function() {
 
   //form input controls
   function validationInput(name, email, message) {
-    const regexName = /^[A-Za-z]+$/; //check there are no numbers
+    const regexName = /^[A-Za-z\s]+$/; //check there are no numbers
     const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //check that it's an e-mail
     var valid = true;
     var errorMessage = "Il tuo messaggio non è stato inviato.\n\nEcco perchè:";

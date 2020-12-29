@@ -11,7 +11,7 @@ $(document).ready(function() {
     });
   });
 
-  //function that controls the I nostri progetti's carousel
+  //function to control I NOSTRI PROGETTI carousel
   $('.cdm-car').slick({
     centerMode: true,
     centerPadding: '0px',
@@ -28,7 +28,7 @@ $(document).ready(function() {
     }]
   });
 
-  //function that controls the Le testimonianze's carousel
+  //function to control TESTIMONIANZE carousel
   $('.cdm-car-reviews').slick({
     centerMode: true,
     centerPadding: '0px',
@@ -56,20 +56,20 @@ $(document).ready(function() {
     ]
   });
 
-  //form input controls
+  //fuction to control the form inputs
   function validationInput(name, email, message) {
-    const regexName = /^[A-Za-z\s]+$/; //check there are no numbers
-    const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //check that it's an e-mail
+    const regexName = /^[A-Za-z\s]+$/; //regex to control that there are no number in name and surname
+    const regexEmail = /\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*/; //regex to control the email format
     var valid = true;
-    var errorMessage = "Il tuo messaggio non è stato inviato.\n\nEcco perchè:";
+    var errorMessage = "Il tuo messaggio non è stato inviato.\n\nEcco perchè:"; //error message
 
-    //the name is not valid if it is empty or contains numbers
+    //the name is not valid if it is empty or it contains numbers
     if (name == null || !regexName.test(name.value)) {
       valid = false;
       errorMessage = errorMessage + "\n- Il campo \"Nome e Cognome\" è vuoto o contiene un numero";
     }
 
-    //email is not valid if it is empty or it doesn't have the right format
+    //email is not valid if it is empty or it doesn't have the correct format
     if (email == null || !regexEmail.test(email.value)) {
       valid = false;
       errorMessage = errorMessage + "\n- Il campo \"Email\" non è valido";
@@ -82,13 +82,13 @@ $(document).ready(function() {
     }
 
     if (!valid) {
-      alert(errorMessage); //the message appears only if at least one input is incorrect
+      alert(errorMessage); //the error message appears only if at least one input is incorrect
     } else {
-      alert("Il tuo messaggio è stato inviato!");
+      alert("Il tuo messaggio è stato inviato!"); //otherwise the message is sent correctly
     }
   }
 
-  // Alert of the page Contattaci
+  // Alert for CONTATTACI form
   $('#cdm-button-form-contattaci').on('click', function() {
     let nameContattaci = document.getElementById("inputNameContattaci");
     let emailContattaci = document.getElementById("inputEmailContattaci");
@@ -97,7 +97,7 @@ $(document).ready(function() {
     return validationInput(nameContattaci, emailContattaci, messageContattaci);
   });
 
-  // Alert of the page Chi siamo
+  // Alert for CHI SIAMO form
   $('#cdm-button-form-chi-siamo').on('click', function() {
     let nameChiSiamo = document.getElementById("inputNameChiSiamo");
     let emailChiSiamo = document.getElementById("inputEmailChiSiamo");
@@ -106,39 +106,39 @@ $(document).ready(function() {
     return validationInput(nameChiSiamo, emailChiSiamo, messageChiSiamo);
   });
 
-  // add padding top to show content behind navbar
 
+// function to hide the first part of the header only on desktop and tablet
   $(function () {
 
-    var windowSizeWide = $(window).width(); // reduced for testing purposes
-
+    var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
     if (windowSizeWide > 768) {
+      // add padding top to show content behind navbar
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
     }
 
   });
 
+// function to hide the first part of the header only on desktop and tablet everytime the window is resized
   $(window).on('resize', function(event) {
 
-    var windowSizeWide = $(window).width(); // reduced for testing purposes
+    var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
 
     if (windowSizeWide > 768) {
+      // add padding top to show content behind navbar
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
     }
     else{
+      //set the padding top to 0
       $('body').css('padding-top', 0 + 'px')
     }
 
   });
 
 
-
-
-
-// detect scroll top or down
+// function to detect scroll top or down
 if ($('.smart-scroll').length > 0) { // check if element exists
-  var last_scroll_top = 0;
+  var last_scroll_top = 0; //the last scroll top is set to 0
   $(window).on('scroll', function() {
     scroll_top = $(this).scrollTop();
     if (scroll_top < last_scroll_top) {

@@ -1,4 +1,4 @@
-/* import font Quicksand & Grandstander from Google Fonts*/
+/* import Quicksand & Grandstander fonts from Google Fonts*/
 
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
@@ -21,7 +21,7 @@
 }
 
 
-/* ------- rest Browser default style and general setting ------- */
+/* ------- reset Browser default style and general settings ------- */
 
 *,
 *:active {
@@ -73,7 +73,7 @@
 }
 
 
-/* ------- sections settings ------- */
+/* ------- section settings ------- */
 
 .cdm-section {
     padding-top: 2rem;
@@ -81,7 +81,7 @@
 }
 
 
-/* ------- buttons settings ------- */
+/* ------- button settings ------- */
 
 .cdm-btn {
     display: block;
@@ -93,7 +93,7 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* button on white background and hover buttons on colored background */
+/* button on white background and button hover on coloured background */
 .cdm-btn-normal,
 .cdm-btn-reverse:hover {
     background-color: var(--main-color);
@@ -102,12 +102,12 @@
     text-decoration: none;
 }
 
-/* border of button hover on colored background */
+/* border of button hover on coloured background */
 .cdm-btn-reverse:hover {
     border: 2px solid var(--white);
 }
 
-/* button on colored background and hover buttons on white background */
+/* button on coloured background and button hover on white background */
 .cdm-btn-reverse,
 .cdm-btn-normal:hover {
     background-color: var(--white);
@@ -122,7 +122,7 @@
 }
 
 
-/* ------- images settings ------- */
+/* ------- image settings ------- */
 
 .img {
     max-width: 100%;
@@ -138,9 +138,9 @@
 }
 
 
-/* ------- baloons settings ------- */
+/* ------- baloon settings ------- */
 
-/* the class of the div that contain svg of baloon. It is a circle */
+/* the div class that contains baloon svg. It is a circle */
 .cdm-baloon {
     width: 12.5rem;
     height: 12.5rem;
@@ -148,14 +148,14 @@
     text-align: center;
 }
 
-/* the class of the svg baloon */
+/* the class of the baloon svg*/
 .cdm-baloon svg {
     max-width: 100%;
     max-height: 100%;
     padding: 0.75rem;
 }
 
-/* class in which you can fill the baloon with a different color */
+/* the class used to change the baloon colour */
 .cdm-baloon svg path {
     fill: var(--white);
     fill-rule: evenodd;
@@ -163,7 +163,7 @@
 }
 
 
-/* ------- header setting -------*/
+/* ------- header settings -------*/
 
 header {
     background-color: var(--white);
@@ -250,7 +250,7 @@ header {
 }
 
 
-/* ------- waves setting -------*/
+/* ------- wave settings -------*/
 
 .wave {
     display: block;
@@ -258,7 +258,7 @@ header {
     z-index: -1;
 }
 
-/* class of the div inside the two waves*/
+/* div class to set the second part of the wave*/
 .wave-section {
     background-color: var(--main-color);
     z-index: -1;
@@ -267,7 +267,7 @@ header {
 }
 
 
-/* ------- carousel setting -------*/
+/* ------- carousel settings -------*/
 
 .cdm-carousel-section {
     padding-left: 0;
@@ -297,7 +297,7 @@ header {
     margin: 0;
 }
 
-/* carousel's dots setting */
+/* carousel dots settings */
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -337,7 +337,7 @@ header {
 }
 
 
-/* ------- forms setting -------*/
+/* ------- form settings -------*/
 
 .form-control:focus {
     border-color: var(--light-grey);
@@ -366,7 +366,7 @@ header {
 }
 
 
-/* ------- footer setting -------*/
+/* ------- footer settings -------*/
 
 footer {
     background-color: var(--text-grey);
@@ -404,22 +404,6 @@ footer i:hover {
 
 
 /* ------- color classes -------*/
-.cdm-text-red {
-    color: var(--red);
-}
-
-.cdm-text-green {
-    color: var(--green);
-}
-
-.cdm-text-blue {
-    color: var(--blue);
-}
-
-.cdm-text-yellow {
-    color: var(--yellow);
-}
-
 .cdm-yellow {
     background-color: var(--yellow);
 }
@@ -431,7 +415,6 @@ footer i:hover {
 .cdm-blue {
     background-color: var(--blue);
 }
-
 
 /* ------- media query to change style for devices larger than 760px ------- */
 @media screen and (min-width: 768px) {
@@ -473,7 +456,7 @@ footer i:hover {
         margin-bottom: 0;
     }
 
-    /* media query to change the size of the logo of the menu */
+    /* media query to change the size of the menu logo*/
     #cdm-logo-desktop {
         padding: 0.5rem;
         height: 6rem;

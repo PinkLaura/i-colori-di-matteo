@@ -8,20 +8,20 @@
 }
 
 
-/*  ------- main title ------- */
+/*  ------- main title settings ------- */
 .cdm-title-1 span {
     font: inherit;
 }
 
 
-/*  ------- baloons  ------- */
+/*  ------- baloon settings  ------- */
 .cdm-baloon {
     max-width: 30vw;
     max-height: 30vw;
 }
 
 
-/*  ------- class to made buttons yellow  ------- */
+/*  ------- class to change the button color in yellow ------- */
 .cdm-yellow-button {
     background-color: var(--yellow);
     border-color: var(--yellow);
@@ -34,13 +34,13 @@
 }
 
 
-/*  ------- to make wave green  ------- */
+/*  ------- id to make the wave green  ------- */
 #cdm-green-wave {
     fill: var(--green);
 }
 
 
-/*  ------- to make buttons green  ------- */
+/*  ------- id to make the button green  ------- */
 #cdm-green-button {
     color: var(--green);
 }
@@ -51,13 +51,13 @@
 }
 
 
-/*  ------- carousels  ------- */
+/*  ------- carousel settings  ------- */
 .slick-dots button {
     background-color: var(--yellow);
 }
 
 
-/* ------- media query to change style for devices larger than 760px ------- */
+/* ------- media query to change the baloon style for devices larger than 760px ------- */
 @media screen and (min-width: 768px) {
     .cdm-baloon {
         max-width: 100%;

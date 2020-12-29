@@ -8,7 +8,7 @@
 }
 
 
-/*  ------- section Modi per supportarci ------- */
+/*  ------- MODI PER SUPPORTARCI section  ------- */
 .cdm-support-section ul,
 .cdm-support-section li {
     list-style-type: none;
@@ -21,7 +21,7 @@
 }
 
 
-/*  ------- baloons ------- */
+/*  ------- baloon settings ------- */
 .cdm-baloon svg path {
     fill: var(--main-color);
     max-width: 100%;
@@ -39,7 +39,7 @@
 }
 
 
-/*  ------- products ------- */
+/*  ------- product card settings ------- */
 .cdm-product {
     border-radius: 2rem;
     border: 2px solid var(--white);
@@ -60,7 +60,7 @@
 }
 
 
-/*  ------- greetings ------- */
+/*  ------- greeting settings ------- */
 .cdm-greetings div{
    padding: 0.25rem;
 }
@@ -76,7 +76,7 @@
 }
 
 
-/* ------- media query to change style for devices larger than 760px ------- */
+/* ------- media query to change baloon style for devices larger than 760px ------- */
 @media screen and (min-width: 768px) {
     .cdm-baloon {
         height: 3rem;

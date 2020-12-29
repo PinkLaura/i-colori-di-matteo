@@ -8,7 +8,7 @@
 }
 
 
-/*  ------- map style  ------- */
+/*  ------- map style settings ------- */
 .cdm-map iframe{
     height: 15rem;
     border-radius: 3rem;
@@ -18,7 +18,7 @@
 }
 
 
-/*  ------- contact's icons  ------- */
+/*  ------- contact icons settings ------- */
 .cdm-contact-icons div div {
     padding: 1.5rem;
 }

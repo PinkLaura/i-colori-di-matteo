@@ -107,8 +107,8 @@ $(document).ready(function() {
   });
 
 
-// function to hide the first part of the header only on desktop and tablet
-  $(function () {
+  // function to hide the first part of the header only on desktop and tablet
+  $(function() {
 
     var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
     if (windowSizeWide > 768) {
@@ -118,7 +118,7 @@ $(document).ready(function() {
 
   });
 
-// function to hide the first part of the header only on desktop and tablet everytime the window is resized
+  // function to hide the first part of the header only on desktop and tablet everytime the window is resized
   $(window).on('resize', function(event) {
 
     var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
@@ -127,8 +127,7 @@ $(document).ready(function() {
       // add padding top to show content behind navbar
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
-    }
-    else{
+    } else {
       //set the padding top to 0
       $('body').css('padding-top', 0 + 'px')
     }
@@ -136,18 +135,18 @@ $(document).ready(function() {
   });
 
 
-// function to detect scroll top or down
-if ($('.smart-scroll').length > 0) { // check if element exists
-  var last_scroll_top = 0; //the last scroll top is set to 0
-  $(window).on('scroll', function() {
-    scroll_top = $(this).scrollTop();
-    if (scroll_top < last_scroll_top) {
-      $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
-    } else {
-      $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
-    }
-    last_scroll_top = scroll_top;
-  });
-}
+  // function to detect scroll top or down
+  if ($('.smart-scroll').length > 0) { // check if element exists
+    var last_scroll_top = 0; //the last scroll top is set to 0
+    $(window).on('scroll', function() {
+      scroll_top = $(this).scrollTop();
+      if (scroll_top < last_scroll_top) {
+        $('.smart-scroll').removeClass('scrolled-down').addClass('scrolled-up');
+      } else {
+        $('.smart-scroll').removeClass('scrolled-up').addClass('scrolled-down');
+      }
+      last_scroll_top = scroll_top;
+    });
+  }
 
 });

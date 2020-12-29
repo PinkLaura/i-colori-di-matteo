@@ -8,13 +8,13 @@
 }
 
 
-/*  ------- carousel  ------- */
+/*  ------- carousel settings ------- */
 .slick-dots button {
   background-color: var(--white);
 }
 
 
-/*  ------- baloons  ------- */
+/*  ------- baloon settings  ------- */
 .cdm-baloon svg path {
   fill: var(--main-color);
   fill-rule: evenodd;

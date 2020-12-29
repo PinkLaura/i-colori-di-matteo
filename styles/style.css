@@ -404,6 +404,23 @@ footer i:hover {
 
 
 /* ------- color classes -------*/
+/* ------- color classes -------*/
+.cdm-text-red {
+    color: var(--red);
+}
+
+.cdm-text-green {
+    color: var(--green);
+}
+
+.cdm-text-blue {
+    color: var(--blue);
+}
+
+.cdm-text-yellow {
+    color: var(--yellow);
+}
+
 .cdm-yellow {
     background-color: var(--yellow);
 }
@@ -415,6 +432,7 @@ footer i:hover {
 .cdm-blue {
     background-color: var(--blue);
 }
+
 
 /* ------- media query to change style for devices larger than 760px ------- */
 @media screen and (min-width: 768px) {

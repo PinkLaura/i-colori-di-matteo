@@ -8,7 +8,7 @@
 }
 
 
-/* ------- I volontari's carousel ------- */
+/* ------- I VOLONTARI carousel ------- */
 .slick-dots button {
   background-color: var(--white);
 }
@@ -17,7 +17,7 @@
   background-color: var(--main-color);
 }
 
-/* ------- Le testimonianze's carousel ------- */
+/* ------- LE TESTIMONIANZE carousel ------- */
 #carousel-stories .cdm-slick-carousel-item {
   background-color: var(--main-color);
   border-radius: 2rem;
@@ -29,7 +29,7 @@
 }
 
 
-/* ------- media query to change style for devices larger than 760px ------- */
+/* ------- media query to change carousel style for devices larger than 760px ------- */
 @media screen and (min-width: 760px) {
   #carousel-stories .cdm-slick-carousel, #carousel-stories .cdm-slick-carousel-item {
     max-width: 325px;
@@ -41,7 +41,7 @@
 }
 
 
-/* ------- media query to change style for devices larger than 990px ------- */
+/* ------- media query to change carousel style for devices larger than 990px ------- */
 @media screen and (min-width: 992px) {
   #carousel-stories .slick-slide:not(.slick-active) {
     opacity: 1;

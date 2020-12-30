@@ -403,7 +403,10 @@ footer i:hover {
 }
 
 
-/* ------- color classes -------*/
+/* ------- author setting -------*/
+#cdm-author {
+    margin:0;
+}
 /* ------- color classes -------*/
 .cdm-text-red {
     color: var(--red);

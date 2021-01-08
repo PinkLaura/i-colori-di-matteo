@@ -2,11 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Grandstander&family=Quicksand&display=swap');
 
-
 /* import css slick library for carousels */
 
 @import url('slick.css');
-
 
 /* ------- color palette ------- */
 
@@ -93,7 +91,9 @@
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+
 /* button on white background and button hover on coloured background */
+
 .cdm-btn-normal,
 .cdm-btn-reverse:hover {
     background-color: var(--main-color);
@@ -102,12 +102,16 @@
     text-decoration: none;
 }
 
+
 /* border of button hover on coloured background */
+
 .cdm-btn-reverse:hover {
     border: 2px solid var(--white);
 }
 
+
 /* button on coloured background and button hover on white background */
+
 .cdm-btn-reverse,
 .cdm-btn-normal:hover {
     background-color: var(--white);
@@ -116,7 +120,9 @@
     text-decoration: none;
 }
 
+
 /* border of button hover on white background */
+
 .cdm-btn-normal:hover {
     border: 2px solid var(--main-color);
 }
@@ -140,7 +146,9 @@
 
 /* ------- baloon settings ------- */
 
+
 /* the div class that contains baloon svg. It is a circle */
+
 .cdm-baloon {
     width: 12.5rem;
     height: 12.5rem;
@@ -148,14 +156,18 @@
     text-align: center;
 }
 
+
 /* the class of the baloon svg*/
+
 .cdm-baloon svg {
     max-width: 100%;
     max-height: 100%;
     padding: 0.75rem;
 }
 
+
 /* the class used to change the baloon colour */
+
 .cdm-baloon svg path {
     fill: var(--white);
     fill-rule: evenodd;
@@ -167,21 +179,21 @@
 
 header {
     background-color: var(--white);
-}
-
-/* setting of the header's shadow*/
-.cdm-shadow {
     -webkit-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+
 /* logo width setting */
+
 .logo-img {
     max-width: 50vw;
 }
 
+
 /* setting of the navbar toggler */
+
 .navbar-toggler,
 .navbar-toggler:active {
     border: none !important;
@@ -189,13 +201,17 @@ header {
     color: var(--text-grey) !important;
 }
 
+
 /* setting of the hamburger menu x icon */
+
 #ham-closed-icon {
     font-size: 1rem;
     color: var(--text-grey);
 }
 
+
 /* setting of the menu items */
+
 #cdm-ul {
     width: 100%;
     display: flex;
@@ -225,7 +241,9 @@ header {
     justify-content: center;
 }
 
+
 /* setting of the active menu items */
+
 #cdm-ul .nav-item .active,
 #cdm-ul .nav-link:hover {
     background-color: var(--white);
@@ -238,7 +256,9 @@ header {
     padding: 0;
 }
 
+
 /* setting of the donation button */
+
 #cdm-donation-btn {
     background-color: var(--red);
     border-color: var(--red);
@@ -258,7 +278,9 @@ header {
     z-index: -1;
 }
 
+
 /* div class to set the second part of the wave*/
+
 .wave-section {
     background-color: var(--main-color);
     z-index: -1;
@@ -297,7 +319,9 @@ header {
     margin: 0;
 }
 
+
 /* carousel dots settings */
+
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -375,7 +399,7 @@ footer {
     text-align: center;
 }
 
-.cmd-foo-title {
+.cdm-foo-title {
     color: var(--white);
     font-size: 1rem;
 }
@@ -392,7 +416,9 @@ footer .row {
     padding: 1.5rem;
 }
 
+
 /* footer icons style */
+
 footer i {
     font-size: 1.5rem;
     color: var(--white);
@@ -404,10 +430,15 @@ footer i:hover {
 
 
 /* ------- author setting -------*/
+
 #cdm-author {
-    margin:0;
+    margin: 0;
+    font-size: 0.85rem;
 }
+
+
 /* ------- color classes -------*/
+
 .cdm-text-red {
     color: var(--red);
 }
@@ -438,6 +469,7 @@ footer i:hover {
 
 
 /* ------- media query to change style for devices larger than 760px ------- */
+
 @media screen and (min-width: 768px) {
     .cdm-title-1 {
         font-size: 3rem;
@@ -494,7 +526,9 @@ footer i:hover {
     }
 }
 
+
 /* ------- media query to change style for devices larger than 990px ------- */
+
 @media screen and (min-width: 992px) {
     .cdm-slick-carousel .cdm-slick-carousel-item {
         max-width: 255px;

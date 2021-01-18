@@ -111,7 +111,7 @@ $(document).ready(function() {
   $(function() {
 
     var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
-    if (windowSizeWide > 768) {
+    if (windowSizeWide >= 768) {
       // add padding top to show content behind navbar
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
     }
@@ -123,7 +123,7 @@ $(document).ready(function() {
 
     var windowSizeWide = $(window).width(); //the window width is assigned to the windowSizeWide variable
 
-    if (windowSizeWide > 768) {
+    if (windowSizeWide >= 768) {
       // add padding top to show content behind navbar
       $('body').css('padding-top', $('.navbar').outerHeight() + 'px')
 
